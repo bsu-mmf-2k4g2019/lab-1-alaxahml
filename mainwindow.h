@@ -1,5 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#define STUDENT_CNT 5
+#define MARK_CNT 5
 
 #include<QMainWindow>
 #include<QDialog>
@@ -19,12 +21,13 @@ class MainWindow : public QDialog
 public:
   MainWindow(QWidget *parent=nullptr);
 private:
-   QLabel *l1,*l2,*l3,*current,*edit;
-   QSpinBox *sb1,*sb2,*sb3;
+   QLabel **l,*current,*edit;
+   QSpinBox **sb;
    QComboBox *cb;
    QPushButton *ok,*exit;
    QVector <QVector<int>> vector;
 private slots:
+
    void OkPressed();
    void BoxChanged();
 
