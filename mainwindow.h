@@ -20,6 +20,7 @@ class MainWindow : public QDialog
 
 public:
   MainWindow(QWidget *parent=nullptr);
+  ~MainWindow();
 private:
    QLabel **l,*current,*edit;
    QSpinBox **sb;
